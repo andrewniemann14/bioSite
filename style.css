@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: Poppins;
+  background-color: #FFF6C7;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+figcaption {
+  font-size: .75em;
+  font-family: Indie Flower;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #C4FDE4;
+  border-bottom: 15px solid #DDDDDD ;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #DDDDDD;
+}
+
+#container {
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#hobbies {
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: .3s;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card figure {
+  float: none;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.card.horizontal {
+  width: 50%;
+  height: 250px;
+  background-color: #FFE8EF;
+}
+
+.card.horizontal.right {
+  text-align: right;
+  background-color: #C4FDE4;
+}
+
+.card.large {
+  width: 50%;
+  background-color: #FFE8EF;
+}
+
+
+.card.vertical {
+  flex-direction: column;
+  text-align: center;
+  width: 20%;
+  height: 60%;
+  background-color: #FFE8EF;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: .3s;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2em;
+  color: #4F3674;
+  font-weight: 400;
+}
+
+
+footer {
+  background-color: #C4FDE4;
+  position: absolute;
+  bottom: 0;
+  border-top: 5px solid #DDDDDD;
+  width: 100%
+}
+
+footer p {
+  float: right;
+  padding-right: 10px;
+  font-style: italic;
+  font-size: .75em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
