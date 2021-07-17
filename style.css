@@ -135,11 +135,11 @@ header {
 
 #left-landing:hover {
   transform: scale(1.25)  translateX(-2.5em);
-  box-shadow: 2px 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 12px 8px 4px rgba(0, 0, 0, 0.2);
 }
 #right-landing:hover {
   transform: scale(1.25)  translateX(2.5em);
-  box-shadow: 2px 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 12px 8px 4px rgba(0, 0, 0, 0.2);
 }
 
                                         /* ABOUT PAGE */
