@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>bioSite Hobbies</title>
+    <title>bioSite Landing</title>
     <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
-    <div id="navbar"> 
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="hobbies.html">Hobbies</a>
-    </div>
+    <div class="page-grid">
 
-    <header>
-      <h1>Hobbies</h1>
-    </header>
+      <nav>
+        <img src="images/banana.jpg" alt="">
+        <a href="index.html"><h3>Home</h3></a>
+        <a href="about.html"><h3>About</h3></a>
+        <a href="hobbies.html" class="current-nav"><h3>Hobbies</h3></a>
+      </nav>
 
-    <div id="container">
-      <div id="hobbies">
 
-        <div class="card vertical">
-          <h5>Heading</h5>
+      <div class="content-grid">
+
+        <header>
+          <h1>Hobbies</h1>
+        </header>
+
+        <div id="hobbies">
+
+          <div class="hobby-card" id="left-hobby">
+            <h4>Hobby</h4>
             <figure>
-              <img src="images/banana.jpg">
-              <figcaption>A picture of a banana</figcaption>
+              <img src="images/banana.jpg" alt="">
+              <figcaption>Description of the picture</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quo reprehenderit asperiores cupiditate officia quos. Delectus maiores minus inventore? Recusandae impedit optio incidunt repudiandae sunt praesentium qui! Pariatur, ab nulla!</p>
+            <p>Nunc malesuada tortor elit, sit amet venenatis magna luctus a. Suspendisse maximus gravida libero nec ultrices. Quisque diam risus, mollis ut velit sed, gravida accumsan magna. Fusce a laoreet metus. Nunc eu ex vitae neque consequat facilisis. Sed risus ipsum, facilisis non mollis at, ultricies eu sapien. Curabitur at arcu eget elit tincidunt ornare aliquet vel nibh. Mauris feugiat urna ac felis lacinia cursus. Donec hendrerit mauris ac ornare sagittis. Sed ullamcorper neque quis accumsan luctus.</p>
+          </div>
+
+          <div class="hobby-card" id="center-hobby">
+            <h4>Hobby</h4>
+            <figure>
+              <img src="images/banana.jpg" alt="">
+              <figcaption>Description of the picture</figcaption>
+            </figure>
+            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum eu mi semper, malesuada mi at, aliquam lectus. Pellentesque eu erat ex. Vestibulum rutrum pulvinar dolor, sed tempor nisl laoreet vel. Proin urna neque, congue sit amet mollis a, maximus a justo. Aenean sollicitudin diam lectus, eu luctus lectus ultrices ut. Donec id ultrices ex. Vestibulum porttitor iaculis justo, id tempus quam gravida et. Donec imperdiet ultricies neque eu vulputate.</p>
+          </div>
+          
+          <div class="hobby-card" id="right-hobby">
+            <h4>Hobby</h4>
+            <figure>
+              <img src="images/banana.jpg" alt="">
+              <figcaption>Description of the picture</figcaption>
+            </figure>
+            <p>Sed sit amet ex quam. Phasellus sapien lorem, sagittis eu vehicula ultrices, euismod quis urna. Aenean elementum a tellus ac porttitor. Sed ac orci quis elit vestibulum molestie. Proin nec vestibulum dolor, vitae euismod tellus. In vestibulum pharetra leo, in rhoncus augue eleifend sed. Aliquam ornare imperdiet libero eu porta. Nullam fermentum sodales nisl rhoncus consectetur. Donec eleifend molestie orci, eget finibus magna consectetur sit amet.</p>
+          </div>
+
         </div>
 
-        <br>
+      </div> <!-- end 9-row content-grid -->
 
-        <div class="card vertical">
-          <h5>Heading</h5>
-          <figure>
-            <img src="images/banana.jpg">
-            <figcaption>A picture of a banana</figcaption>
-          </figure>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quo reprehenderit asperiores cupiditate officia quos. Delectus maiores minus inventore? Recusandae impedit optio incidunt repudiandae sunt praesentium qui! Pariatur, ab nulla!</p>
-        </div>
+      <footer>
+        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Good Grid Guide</a>
+      </footer>
 
-        <br>
-
-        <div class="card vertical">
-          <h5>Heading</h5>
-          <figure>
-            <img src="images/banana.jpg">
-            <figcaption>A picture of a banana</figcaption>
-          </figure>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quo reprehenderit asperiores cupiditate officia quos. Delectus maiores minus inventore? Recusandae impedit optio incidunt repudiandae sunt praesentium qui! Pariatur, ab nulla!</p>
-        </div>
-      </div>
+    </div> <!-- end 3-row page grid -->
 
 
-    </div> <!-- end #container-->
-
-    <footer>
-      <p><a href="https://css-tricks.com/snippets/css/sticky-footer/">sticky footer coming soon</a></p>
-    </footer>
 
   </body>
 </html>

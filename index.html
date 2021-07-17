@@ -5,54 +5,57 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
-    <div id="navbar"> 
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="hobbies.html">Hobbies</a>
-    </div>
+    <div class="page-grid">
 
-    <header>
-      <h1>Landing Page</h1>
-    </header>
+      <nav>
+        <img src="images/banana.jpg" alt="">
+        <a href="index.html" class="current-nav"><h3>Home</h3></a>
+        <a href="about.html"><h3>About</h3></a>
+        <a href="hobbies.html"><h3>Hobbies</h3></a>
+      </nav>
 
-    <div id="container">
-      
 
-      <div class="card horizontal left">
-          <figure>
-            <img src="images/banana.jpg">
-            <figcaption>A picture of a banana</figcaption>
-          </figure>
-          <div>
-            <h5>Heading</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quo reprehenderit asperiores cupiditate officia quos. Delectus maiores minus inventore? Recusandae impedit optio incidunt repudiandae sunt praesentium qui! Pariatur, ab nulla!</p>
-          </div>
-      </div>
+      <div class="content-grid">
 
-      <br>
+        <header>
+          <h1>Landing page</h1>
+        </header>
 
-      <div class="card horizontal right">
-        <div>
-          <h5>Heading</h5>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quo reprehenderit asperiores cupiditate officia quos. Delectus maiores minus inventore? Recusandae impedit optio incidunt repudiandae sunt praesentium qui! Pariatur, ab nulla!</p>
+        <div class="landing-card" id="middle1">
+          <h4>all</h4>
         </div>
-        <figure>
-          <img src="images/banana.jpg">
-          <figcaption>A picture of a banana</figcaption>
-        </figure>
-    </div>
+
+        <div class="landing-card" id="middle2">
+          <h4>down</h4>
+        </div>
+
+        <div class="landing-card" id="middle3">
+          <h4>the middle</h4>
+        </div>
+
+        <div class="landing-card" id="middle4">
+          <h4>aisle</h4>
+        </div>
+
+        <img src="images/banana-left.jpg" class="landing-img" id="left-landing">
+
+        <img src="images/banana-right.jpg" class="landing-img" id="right-landing">
 
 
-    </div> <!-- end #container-->
+      </div> <!-- end 9-row content-grid -->
 
-    <footer>
-      <p><a href="https://css-tricks.com/snippets/css/sticky-footer/">sticky footer coming soon</a></p>
-    </footer>
+      <footer>
+        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Good Grid Guide</a>
+      </footer>
+
+    </div> <!-- end 3-row page grid -->
+
+
 
   </body>
 </html>

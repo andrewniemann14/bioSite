@@ -5,42 +5,53 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
-    <div id="navbar"> 
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="hobbies.html">Hobbies</a>
-    </div>
+    <div class="page-grid">
 
-    <header>
-      <h1>About</h1>
-    </header>
+      <nav>
+        <img src="images/banana.jpg" alt="">
+        <a href="index.html"><h3>Home</h3></a>
+        <a href="about.html" class="current-nav"><h3>About</h3></a>
+        <a href="hobbies.html"><h3>Hobbies</h3></a>
+      </nav>
 
-    <div id="container">
-      
 
-      <div class="card large">
-          <figure>
-            <img src="images/banana.jpg">
-          </figure>
-          <div>
-            <h5>Heading</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quo reprehenderit asperiores cupiditate officia quos. Delectus maiores minus inventore? Recusandae impedit optio incidunt repudiandae sunt praesentium qui! Pariatur, ab nulla!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quo reprehenderit asperiores cupiditate officia quos. Delectus maiores minus inventore? Recusandae impedit optio incidunt repudiandae sunt praesentium qui! Pariatur, ab nulla!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quo reprehenderit asperiores cupiditate officia quos. Delectus maiores minus inventore? Recusandae impedit optio incidunt repudiandae sunt praesentium qui! Pariatur, ab nulla!</p>
+      <div class="content-grid">
+
+        <header>
+          <h1>About</h1>
+        </header>
+
+        <div id="about">
+
+          <div class="about-card">
+            <figure>
+              <img src="images/banana.jpg" alt="">
+              <figcaption>Description of the picture</figcaption>
+            </figure>
+            <div id="about-content">
+              <h4>About</h4>
+              <p>Nam euismod magna at felis tincidunt commodo. Sed eget urna venenatis eros interdum tempus et eget odio. Quisque quis dictum diam, non tincidunt metus. Sed egestas leo at placerat rutrum. Quisque varius gravida mi. Quisque id diam efficitur velit ullamcorper imperdiet et sit amet arcu. Vivamus et cursus quam. Etiam ultricies purus pulvinar odio vestibulum, at interdum nisi pharetra. Maecenas laoreet ipsum dolor, in egestas ipsum eleifend eget.</p>
+              <p>Integer tincidunt ligula vel laoreet sodales. Maecenas malesuada elit sit amet consequat bibendum. Sed at convallis tellus, at viverra eros. Ut ac sapien urna. Aenean et tincidunt felis. Sed odio lectus, interdum vel dictum sit amet, elementum et libero. Sed id erat quis est commodo tristique. Pellentesque a finibus quam. In consectetur maximus enim vel gravida. Proin in fermentum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Mauris ornare lacus urna, non fermentum turpis tincidunt in. Integer semper tellus nunc, a accumsan lacus placerat non. Nam id ex ut quam eleifend semper non mollis urna. Donec ac tellus eget purus ullamcorper pharetra convallis a felis. Donec eu nunc ullamcorper, ullamcorper dui eu, viverra nibh. Praesent quis lacus tellus. Aliquam sed facilisis nibh, ac molestie lacus. Maecenas eu bibendum dui.</p>
+            </div>
           </div>
-      </div>
+
+        </div>
+
+      </div> <!-- end 9-row content-grid -->
+
+      <footer>
+        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Good Grid Guide</a>
+      </footer>
+
+    </div> <!-- end 3-row page grid -->
 
 
-
-    </div> <!-- end #container-->
-
-    <footer>
-    </footer>
 
   </body>
 </html>
