@@ -1,5 +1,5 @@
 body {
-  /* height: 100vh; */
+  height: 100vh;
   margin: 0;
   font-family: Poppins;
   background-color: #FFF6C7;
@@ -15,8 +15,6 @@ body {
   grid-template-areas: "nav"
   "content"
   "footer";
-  /* place-items: center / center; */
-  /* place-content: start center; */
   
 }
 
@@ -79,29 +77,6 @@ header {
   line-height: 7em;
 }
 
-/* .header-border {
-  border: 5px solid #C4FDE4;
-  position: absolute;
-  margin-left: 40%;
-  width: 20%;
-  margin-top: 5%;
-  height: 10%;
-  top: 0;
-  z-index: 10;
-  border-radius: 10px;
-}
-
-.header-border:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 30%;
-  bottom: -5px;
-  right: 0;
-  border: 3px solid #FFF6C7;
-} */
-
-
 
                                         /* LANDING PAGE */
 .landing-card {
@@ -136,7 +111,6 @@ header {
   max-height: 100%;
   max-width: 100%;
   z-index: 10;
-  /* object-fit: cover; */
 }
 
 .landing-img:hover {
@@ -145,6 +119,7 @@ header {
 }
 
 .landing-img:active {
+  grid-area: 2 / 3 / 4 / 5;
   box-shadow: 0 .75em .5em .25em rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
@@ -153,40 +128,22 @@ header {
   grid-area: 2 / 3;
 }
 
-#a1:active {
-  transform: scale(2.1) translateX(3em) translateY(3em);
-}
-
 #b1 {
   grid-area: 2 / 4;
-}
-
-#b1:active {
-  transform: scale(2.1) translateX(-3em) translateY(3em);
 }
 
 #a2 {
   grid-area: 3 / 3;
 }
 
-#a2:active {
-  transform: scale(2.1) translateX(3em) translateY(-3em);
-}
-
 #b2 {
   grid-area: 3 / 4;
-}
-
-#b2:active {
-  transform: scale(2.1) translateX(-3em) translateY(-3em);
 }
 
 
                                         /* ABOUT PAGE */
 #about {
   grid-area: 2 / 3 / 6 / 8;
-  /* display: grid;
-  grid-area: 1fr / 1fr;  */
   }
 
 .about-card {
