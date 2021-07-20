@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   font-family: Poppins;
   background-color: #FFF6C7;
@@ -9,7 +9,7 @@ body {
 .page-grid {
   display: grid;
 
-  height: 100%;
+  height: 100vh;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
   grid-template-areas: "nav"
@@ -101,21 +101,26 @@ header {
   border: 3px solid #FFF6C7;
 } */
 
-#about {
-  grid-area: 2 / 3 / 6 / 8;
-  display: grid;
-  grid-area: 1fr / 1fr; 
-}
+
 
                                         /* LANDING PAGE */
 .landing-card {
-  margin: 0;
+  grid-area: 2 / 5 / 4 / 8;
   padding: 1em;
-  text-align: center;
+  text-align: left;
+  text-indent: 10%;
   background-color: #FFE8EF;
   border-radius: 8px;
   box-shadow: 1px .25em .5em 0 rgba(0, 0, 0, 0.2);
   transition: .3s;
+}
+
+.landing-card h4 {
+  margin: .25em;
+}
+
+.landing-card h5 {
+  margin: 0;
 }
 
 .landing-card:hover {
@@ -124,59 +129,70 @@ header {
   transform: scale(1.05);
 }
 
-#middle1 {
-  grid-area: 2 / 4 / 3 / 7;
-}
-
-#middle2 {
-  grid-area: 3 / 4 / 4 / 7;
-}
-
-#middle3 {
-  grid-area: 4 / 4 / 5 / 7;
-}
-
-#middle4 {
-  grid-area: 5 / 4 / 6 / 7;
-}
-
 .landing-img {
   border-radius: 8px;
   box-shadow: 1px .25em .5em 0 rgba(0, 0, 0, 0.2);
   transition: .3s;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-#left-landing {
-  grid-area: 2 / 2 / 6 / 4;
-}
-
-#right-landing {
-  grid-area: 2 / 7 / 6 / 9;
-}
-
-#left-landing:hover {
-  transform: scale(1.25)  translateX(-2.5em);
-  box-shadow: -.4em .75em .5em .25em rgba(0, 0, 0, 0.2);
+  max-height: 100%;
+  max-width: 100%;
   z-index: 10;
+  /* object-fit: cover; */
 }
-#right-landing:hover {
-  transform: scale(1.25)  translateX(2.5em);
-  box-shadow: .4em .75em .5em .25em rgba(0, 0, 0, 0.2);
-  z-index: 10;
+
+.landing-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
+
+.landing-img:active {
+  box-shadow: 0 .75em .5em .25em rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+#a1 {
+  grid-area: 2 / 3;
+}
+
+#a1:active {
+  transform: scale(2.1) translateX(3em) translateY(3em);
+}
+
+#b1 {
+  grid-area: 2 / 4;
+}
+
+#b1:active {
+  transform: scale(2.1) translateX(-3em) translateY(3em);
+}
+
+#a2 {
+  grid-area: 3 / 3;
+}
+
+#a2:active {
+  transform: scale(2.1) translateX(3em) translateY(-3em);
+}
+
+#b2 {
+  grid-area: 3 / 4;
+}
+
+#b2:active {
+  transform: scale(2.1) translateX(-3em) translateY(-3em);
+}
+
 
                                         /* ABOUT PAGE */
 #about {
   grid-area: 2 / 3 / 6 / 8;
-  display: grid;
-  grid-area: 1fr / 1fr;
-}
+  /* display: grid;
+  grid-area: 1fr / 1fr;  */
+  }
 
 .about-card {
   margin: 0;
+  max-height: 100%;
+  max-width: 100%;
   padding: 1em;
   text-align: left;
   background-color: #FFE8EF;
@@ -185,6 +201,7 @@ header {
   transition: .3s;
   display: flex;
   column-gap: 1em;
+  flex-flow: row;
   
 }
 
@@ -195,14 +212,19 @@ header {
 }
 
 .about-card figure {
+  display: block;
   margin: 0;
-  float: left;
 }
 
 .about-card img {
-  height: 90%;
+  display:block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 3px;
+  /* transform:translateY(-5%); */
 }
+
 
                                         /* HOBBIES PAGE */
 .hobby-card {
@@ -237,6 +259,10 @@ header {
 
 .hobby-card p {
   padding: .5em;
+}
+
+.hobby-card h4 {
+  margin: .5em;
 }
 
 /* POSITIONING OF HOBBY CARDS */
