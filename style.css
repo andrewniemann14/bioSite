@@ -119,8 +119,8 @@ header {
 }
 
 .landing-img:active {
-  grid-area: 2 / 3 / 4 / 5;
   box-shadow: 0 .75em .5em .25em rgba(0, 0, 0, 0.2);
+  transform: scale(3.2);
   z-index: 100;
 }
 
@@ -171,6 +171,7 @@ header {
 .about-card figure {
   display: block;
   margin: 0;
+  min-width: 30%;
 }
 
 .about-card img {
@@ -292,7 +293,7 @@ h5 {
 }
 
 p {
-  font-size: .75em;
+  font-size: .9em;
 }
 
 figcaption {
