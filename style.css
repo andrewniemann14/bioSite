@@ -202,7 +202,7 @@ header {
 }
 
 #hobbies:hover > .hobby-card:not(:hover) {
-  filter: blur(2px) saturate(.8);
+  filter: saturate(0);
 }
 
 .hobby-card figure {
