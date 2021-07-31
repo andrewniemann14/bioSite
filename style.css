@@ -15,7 +15,6 @@ body {
   grid-template-areas: "nav"
   "content"
   "footer";
-  
 }
 
 
@@ -299,4 +298,23 @@ p {
 figcaption {
   font-family: "Indie Flower";
   font-size: .7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:550px) {
+  .content-grid {
+    display: grid;
+    grid-template: 20% repeat(5, 1fr) / 1fr;
+    gap: 5px;
+  }
 }
